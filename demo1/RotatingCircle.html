@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>旋转的圆</title>
+</head>
+
+<body>
+    <canvas id="mycanvas" width="1000" height="1000"></canvas>
+</body>
+
+</html>
+<script src="./AutoPoint.js"></script>
+<script>
+    new AutoPoint({
+        position:[300,300],
+        number:20,
+        piece:15,
+        speed:100,
+        circle:{
+            r:5,
+            gap:5
+        },
+        color:'red'
+    }).start();
+</script>
